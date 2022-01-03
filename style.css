@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  column-gap: 20px;
+  justify-content: center;
+  margin: 2rem auto;
+
+
+  /* En un futuro esta opcion existira para todos los navegadores y hariamos uso de css puro */
+  /* grid-template-rows: masonry; */
+}
+.grid-item{
+  width: 300px;
+  object-fit: cover;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  background-color: blanchedalmond;
+  cursor: zoom-in;
+}
+.grid-item:hover{
+  opacity: 0.8;
+}
